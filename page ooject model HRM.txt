@@ -1,0 +1,48 @@
+package org.hex.com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class PageObjectModel {
+
+	public static WebElement UserName(WebDriver driver) {
+		return driver.findElement(By.xpath("//input[@name=\'username\']"));
+		
+	}
+	
+	
+	public static WebElement PasswordNew(WebDriver driver) {
+		return driver.findElement(By.xpath("//input[@name=\'password\']"));
+		
+	}
+	public static WebElement Login(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[text()=' Login ']"));
+		
+	}
+	
+	public static WebElement PIM(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[text()='PIM']"));
+		
+	}
+	public static WebElement AddEmployee(WebDriver driver) {
+		return driver.findElement(By.xpath("//a[text()='Add Employee']"));
+		
+	}
+	public static WebElement FirstName(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@name=\'firstName\']"));
+		
+	}
+	public static WebElement LastName(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@name=\'lastName\']"));
+		
+	}public static WebElement Save(WebDriver driver) {
+		return driver.findElement(By.xpath("//button[text()=' Save ']"));
+		
+	}public static WebElement EmployeeList(WebDriver driver) {
+		return driver.findElement(By.xpath("//a[text()='Employee List']"));
+		
+	}public static WebElement EmployeeListSave(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\'app\']/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button"));
+		
+	}}
